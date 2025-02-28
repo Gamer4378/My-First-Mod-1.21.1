@@ -21,7 +21,6 @@ import java.util.List;
 import java.util.Map;
 
 public class ChiselItem extends Item {
-
     private static final Map<Block, Block> CHISEL_MAP =
             Map.of(
                     Blocks.STONE, Blocks.STONE_BRICKS,
@@ -39,14 +38,14 @@ public class ChiselItem extends Item {
         World world = context.getWorld();
         Block clickedBlock = world.getBlockState(context.getBlockPos()).getBlock();
 
-        if (CHISEL_MAP.containsKey(clickedBlock)) {
-            if (!world.isClient()) {
+        if(CHISEL_MAP.containsKey(clickedBlock)) {
+            if(!world.isClient()) {
                 world.setBlockState(context.getBlockPos(), CHISEL_MAP.get(clickedBlock).getDefaultState());
-                context.getStack().damage(1,((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
+
+                context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
-
             }
         }
 
@@ -56,11 +55,11 @@ public class ChiselItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         if(Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.tutorialmod.chisel.shift_down.tooltip"));
-        }else {
-            tooltip.add(Text.translatable("tooltip.tutorialmod.chisel.tooltip"));
-
+            tooltip.add(Text.translatable("tooltip.tutorialmod.chisel.shift_down"));
+        } else {
+            tooltip.add(Text.translatable("tooltip.tutorialmod.chisel"));
         }
+
         super.appendTooltip(stack, context, tooltip, type);
     }
 }
