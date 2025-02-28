@@ -90,6 +90,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('C', Items.STICK)
                 .criterion("has_pink_garnet", conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_HAMMER)
+                .pattern("RRR")
+                .pattern("RCR")
+                .pattern(" C ")
+                .input('R', ModItems.PINK_GARNET)
+                .input('C', Items.STICK)
+                .criterion("has_pink_garnet", conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(exporter);
 
 
 
