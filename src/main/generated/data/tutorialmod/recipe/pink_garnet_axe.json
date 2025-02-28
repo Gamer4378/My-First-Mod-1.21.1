@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "tutorialmod:pink_garnet"
+    }
+  },
+  "pattern": [
+    " RR",
+    " CR",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:pink_garnet_axe"
+  }
+}

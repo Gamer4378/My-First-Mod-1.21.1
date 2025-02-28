@@ -9,18 +9,17 @@ import net.minecraft.util.math.BlockPos;
 
 import java.util.function.UnaryOperator;
 
-public class ModDataCompnentTypes {
-
+public class ModDataComponentTypes {
     public static final ComponentType<BlockPos> COORDINATES =
-            register("coordinates", builder-> builder.codec(BlockPos.CODEC));
+            register("coordinates", builder -> builder.codec(BlockPos.CODEC));
 
 
-
-    public static <T>ComponentType<T> register(String name, UnaryOperator<ComponentType.Builder<T>> builderOperator) {
+    private static <T>ComponentType<T> register(String name, UnaryOperator<ComponentType.Builder<T>> builderOperator) {
         return Registry.register(Registries.DATA_COMPONENT_TYPE, Identifier.of(TutorialMod.MOD_ID, name),
                 builderOperator.apply(ComponentType.builder()).build());
     }
-    public static void registerComponetTypes() {
-        TutorialMod.LOGGER.info("Registering Componet Types for " + TutorialMod.MOD_ID);
+
+    public static void registerDataComponentTypes() {
+        TutorialMod.LOGGER.info("Registering Data Component Types for " + TutorialMod.MOD_ID);
     }
 }

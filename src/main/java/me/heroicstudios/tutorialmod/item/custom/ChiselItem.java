@@ -1,11 +1,10 @@
 package me.heroicstudios.tutorialmod.item.custom;
 
 import me.heroicstudios.tutorialmod.block.ModBlocks;
-import me.heroicstudios.tutorialmod.componet.ModDataCompnentTypes;
+import me.heroicstudios.tutorialmod.componet.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.component.ComponentType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -49,7 +48,7 @@ public class ChiselItem extends Item {
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
 
-                context.getStack().set(ModDataCompnentTypes.COORDINATES, context.getBlockPos());
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
         }
 
@@ -62,10 +61,6 @@ public class ChiselItem extends Item {
             tooltip.add(Text.translatable("tooltip.tutorialmod.chisel.shift_down"));
         } else {
             tooltip.add(Text.translatable("tooltip.tutorialmod.chisel"));
-        }
-
-        if(stack.get(ModDataCompnentTypes.COORDINATES) != null) {
-            tooltip.add(Text.literal("Last Block Changed at " + stack.get(ModDataCompnentTypes.COORDINATES)));
         }
 
         super.appendTooltip(stack, context, tooltip, type);
