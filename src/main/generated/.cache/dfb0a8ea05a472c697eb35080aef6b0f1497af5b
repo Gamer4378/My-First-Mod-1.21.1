@@ -1,6 +1,8 @@
-// 1.21.1	2025-02-28T16:01:51.414088	Tutorial Mod/Recipes
+// 1.21.1	2025-02-28T16:08:30.8390639	Tutorial Mod/Recipes
+5c1e551a32f18059b14bcd9ff5dc70ec5df79be0 data\tutorialmod\recipe\pink_garnet_hammer.json
 815842d8a54db2bf2790d059952bad7d979b3a19 data\tutorialmod\recipe\pink_garnet.json
 6a84b180e209076bc545edb9589587f71cd7e312 data\tutorialmod\advancement\recipes\tools\pink_garnet_sword.json
+7d143a859ca36f38fb3ea56dccd0ae1beb65cab4 data\tutorialmod\advancement\recipes\tools\pink_garnet_hammer.json
 914dd8c2800e4c0e186d900b517aeb3b2aa7a5b1 data\tutorialmod\advancement\recipes\misc\pink_garnet_from_smelting_pink_garnet_deepslate_ore.json
 19829bd54ce48362e6e9addaa1bfb8c9df275f52 data\tutorialmod\advancement\recipes\misc\raw_pink_garnet.json
 e1c6f06946338396b44604d89bd437490151ecc5 data\tutorialmod\advancement\recipes\tools\pink_garnet_pickaxe.json
