@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-28T14:40:09.6072468	Tutorial Mod/Model Definitions
+// 1.21.1	2025-02-28T16:01:51.4153416	Tutorial Mod/Model Definitions
 a14b776861c63f6e0da6942ef0b17cd5bb50e48d assets\tutorialmod\models\block\pink_garnet_pressure_plate.json
 5766845b2b537199e0d43d0fa33b3fb4ff9dc38d assets\tutorialmod\models\block\pink_garnet_ore.json
 b8a328f7a3c0600e44839a46d05666c47291ffb9 assets\tutorialmod\models\block\raw_pink_garnet_block.json
@@ -9,6 +9,7 @@ dcb8c72e5f3b703f9f0ef355f6d347e50c94b4db assets\tutorialmod\models\block\pink_ga
 e10ed0f44080df33ec18cbea1e4ca95ffa54b62f assets\tutorialmod\models\item\pink_garnet_button.json
 f7956eb1acfccb309307cd40ba8d8e9a1f968b6e assets\tutorialmod\models\block\pink_garnet_pressure_plate_down.json
 44df06c1ed35df1eb8954755fdc61e81fb77e9da assets\tutorialmod\models\item\pink_garnet_deepslate_ore.json
+00d484aeafa1b6b8a7a6dcc575cfd572b517bd23 assets\tutorialmod\models\item\pink_garnet_hammer.json
 cf96d28db115823b34bfd1565914960950d7f752 assets\tutorialmod\models\block\pink_garnet_stairs_outer.json
 f8b6f1021ac80c221d8d83ede8e5816c45ef723f assets\tutorialmod\blockstates\pink_garnet_button.json
 c36f2c03106c40f3be92bb4dce81d04393b71fcc assets\tutorialmod\models\item\pink_garnet_stairs.json

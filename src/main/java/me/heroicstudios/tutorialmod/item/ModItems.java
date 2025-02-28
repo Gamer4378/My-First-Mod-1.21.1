@@ -42,6 +42,9 @@ public class ModItems {
     public static final Item PINK_GARNET_HOE = registerItem("pink_garnet_hoe",
             new HoeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 0, -2.3f))));
+    public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer",
+            new HoeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, -3.5f))));
 
 
     private static Item registerItem(String name, Item item) {

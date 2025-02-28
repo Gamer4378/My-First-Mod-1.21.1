@@ -1,7 +1,9 @@
 package me.heroicstudios.tutorialmod;
 
+import me.heroicstudios.tutorialmod.util.HammerUsageEvent;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import me.heroicstudios.tutorialmod.block.ModBlocks;
 import me.heroicstudios.tutorialmod.item.ModItemGroups;
@@ -22,5 +24,7 @@ public class TutorialMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
+
+		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 	}
 }
