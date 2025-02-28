@@ -1,5 +1,6 @@
 package me.heroicstudios.tutorialmod.item;
 
+import me.heroicstudios.tutorialmod.item.custom.HammerItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import me.heroicstudios.tutorialmod.TutorialMod;
 import me.heroicstudios.tutorialmod.item.custom.ChiselItem;
@@ -43,8 +44,22 @@ public class ModItems {
             new HoeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 0, -2.3f))));
     public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer",
-            new HoeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
+            new HammerItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, -3.5f))));
+
+
+    public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
+            new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",
+            new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item PINK_GARNET_LEGGINGS = registerItem("pink_garnet_leggings",
+            new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",
+            new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
 
     private static Item registerItem(String name, Item item) {
