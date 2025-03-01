@@ -5,17 +5,23 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import me.heroicstudios.tutorialmod.block.ModBlocks;
 import me.heroicstudios.tutorialmod.item.ModItems;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.TableBonusLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
+import org.intellij.lang.annotations.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -35,16 +41,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.PINK_GARNET_STAIRS);
         addDrop(ModBlocks.PINK_GARNET_SLAB, slabDrops(ModBlocks.PINK_GARNET_SLAB));
-
         addDrop(ModBlocks.PINK_GARNET_BUTTON);
         addDrop(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
-
         addDrop(ModBlocks.PINK_GARNET_WALL);
         addDrop(ModBlocks.PINK_GARNET_FENCE);
         addDrop(ModBlocks.PINK_GARNET_FENCE_GATE);
-
         addDrop(ModBlocks.PINK_GARNET_DOOR, doorDrops(ModBlocks.PINK_GARNET_DOOR));
         addDrop(ModBlocks.PINK_GARNET_TRAPDOOR);
+
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

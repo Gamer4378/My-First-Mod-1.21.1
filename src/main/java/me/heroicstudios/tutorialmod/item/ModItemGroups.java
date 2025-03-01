@@ -18,10 +18,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.RAW_PINK_GARNET);
-
                         entries.add(ModItems.CHISEL);
-                        entries.add(ModItems.CAULIFLOWER);
-
                         entries.add(ModItems.STARLIGHT_ASHES);
                     }).build());
 
@@ -66,6 +63,14 @@ public class ModItemGroups {
 
 
 
+                    }).build());
+
+    public static final ItemGroup HEROIC_FOODS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TutorialMod.MOD_ID, "heroic_foods"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GREEN_APPLE))
+                    .displayName(Text.translatable("itemgroup.tutorialmod.heroic_foods"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.GREEN_APPLE);
                     }).build());
 
 
