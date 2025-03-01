@@ -1,6 +1,7 @@
 package me.heroicstudios.tutorialmod;
 
 import me.heroicstudios.tutorialmod.util.HammerUsageEvent;
+import me.heroicstudios.tutorialmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
@@ -19,6 +20,7 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
+		ModWorldGeneration.generateModWorldGen();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
