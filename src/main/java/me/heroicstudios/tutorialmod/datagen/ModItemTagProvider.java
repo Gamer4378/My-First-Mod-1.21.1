@@ -1,5 +1,6 @@
 package me.heroicstudios.tutorialmod.datagen;
 
+import me.heroicstudios.tutorialmod.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import me.heroicstudios.tutorialmod.item.ModItems;
@@ -7,6 +8,7 @@ import me.heroicstudios.tutorialmod.util.ModTags;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -41,5 +43,16 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PINK_GARNET_CHESTPLATE)
                 .add(ModItems.PINK_GARNET_LEGGINGS)
                 .add(ModItems.PINK_GARNET_BOOTS);
+
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DRIFTWOOD_LOG.asItem())
+                .add(ModBlocks.DRIFTWOOD_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_LOG.asItem())
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.DRIFTWOOD_PLANKS.asItem());
+
     }
 }

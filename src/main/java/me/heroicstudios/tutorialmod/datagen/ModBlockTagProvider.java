@@ -4,6 +4,7 @@ import me.heroicstudios.tutorialmod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import me.heroicstudios.tutorialmod.block.ModBlocks;
+import net.minecraft.block.Block;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -35,5 +36,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        //Drift Wood Set
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DRIFTWOOD_LOG)
+                .add(ModBlocks.DRIFTWOOD_WOOD)
+                .add(ModBlocks.DRIFTWOOD_PLANKS)
+                .add(ModBlocks.DRIFTWOOD_LEAVES)
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_LOG)
+                .add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
     }
 }
