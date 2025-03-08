@@ -1,6 +1,7 @@
 package me.heroicstudios.tutorialmod;
 
 import me.heroicstudios.tutorialmod.componet.ModDataComponentTypes;
+import me.heroicstudios.tutorialmod.sound.ModSounds;
 import me.heroicstudios.tutorialmod.util.HammerUsageEvent;
 import me.heroicstudios.tutorialmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
@@ -26,6 +27,7 @@ public class TutorialMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModDataComponentTypes.registerDataComponentTypes();
+		ModSounds.registerSounds();
 		ModWorldGeneration.generateModWorldGen();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
