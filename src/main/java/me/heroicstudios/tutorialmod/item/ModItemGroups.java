@@ -70,6 +70,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
                         entries.add(ModBlocks.DRIFTWOOD_PLANKS);
                         entries.add(ModBlocks.DRIFTWOOD_SAPLING);
+                        entries.add(ModItems.KAUPEN_SMITHING_TEMPLATE);
 
 
 

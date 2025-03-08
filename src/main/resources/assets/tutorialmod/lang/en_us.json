@@ -12,6 +12,8 @@
   "item.tutorialmod.pink_garnet_hoe": "Pink Garnet Hoe",
   "item.tutorialmod.pink_garnet_hammer": "Pink Garnet Hammer",
   "item.tutorialmod.kaupen_bow": "Kaupen Bow",
+  "item.tutorialmod.kaupen_armor_trim_smithing_template": "Kaupen Trim Template",
+
 
 
   "item.tutorialmod.pink_garnet_helmet": "Pink Garnet Helmet",
@@ -63,6 +65,9 @@
 
   "tooltip.tutorialmod.magic_block.tooltip": "This block is very, very §9MAGICAL§r",
   "tooltip.tutorialmod.chisel.shift_down": "This item chisels blocks into Bricks!",
-  "tooltip.tutorialmod.chisel": "Press §eShift§r for more Information!"
+  "tooltip.tutorialmod.chisel": "Press §eShift§r for more Information!",
 
+
+  "trim_material.tutorialmod.pink_garnet": "Pink Garnet Material",
+  "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Pattern"
 }

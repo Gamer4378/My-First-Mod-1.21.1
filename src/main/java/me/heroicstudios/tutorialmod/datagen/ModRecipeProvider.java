@@ -99,7 +99,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion("has_pink_garnet", conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(exporter);
 
-
-
+        offerSmithingTrimRecipe(exporter, ModItems.KAUPEN_SMITHING_TEMPLATE, Identifier.of(TutorialMod.MOD_ID, "kaupen"));
     }
 }

@@ -1,6 +1,8 @@
 package me.heroicstudios.tutorialmod;
 
 import me.heroicstudios.tutorialmod.datagen.*;
+import me.heroicstudios.tutorialmod.trim.ModTrimMaterials;
+import me.heroicstudios.tutorialmod.trim.ModTrimPatterns;
 import me.heroicstudios.tutorialmod.world.ModConfiguredFeatures;
 import me.heroicstudios.tutorialmod.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -26,5 +28,9 @@ public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
 	public void buildRegistry (RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
+
 	}
+
 }
